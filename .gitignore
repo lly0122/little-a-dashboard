@@ -12,3 +12,4 @@ logs/*.log
 .autod.conf.js
 yarn.lock
 npm-debug.log
+screenshot
