@@ -39,9 +39,9 @@ npm run build
 - [x] 打包后，Filename Hash
 
 ## Further Plan
-- [] Automatically select the menu based on the url
-- [] Responsive Sidebar
-- [] Full RESTful API
+- [ ] Automatically select the menu based on the url
+- [ ] Responsive Sidebar
+- [ ] Full RESTful API
 
 ## Screenshot
 
