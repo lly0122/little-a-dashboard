@@ -15,7 +15,7 @@ a little material-design dashboard build upon reactjs, ant design, dva.js. 基�
     npm i or yarn install
 
 #### Run    
-> before run this，you might need to installed roadhog cli，otherwise `npm i roadhog -g`
+> before run this，you might need to installed roadhog cli with `npm i roadhog -g`
 ```bash
 npm start
 ``` 
