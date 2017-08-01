@@ -45,7 +45,7 @@ npm run build
 
 ## Screenshot
 
-- [](https://github.com/huzzbuzz/little-a-dashboard/blob/master/screenshot/screenshot.gif)
+![](https://github.com/huzzbuzz/little-a-dashboard/blob/master/screenshot/screenshot.gif)
 
 
 ## Acknowledge 
