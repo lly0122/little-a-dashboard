@@ -1,0 +1,14 @@
+dist
+node_modules
+.DS_Store
+bower_components
+.idea
+.vscode
+typings
+*.log
+npm-debug.log*
+temp
+logs/*.log
+.autod.conf.js
+yarn.lock
+npm-debug.log
