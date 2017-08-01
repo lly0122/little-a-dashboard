@@ -45,7 +45,35 @@ npm run build
 
 ## Screenshot
 
-![](https://github.com/huzzbuzz/little-a-dashboard/blob/master/screenshot/screenshot.gif)
+#### Dashboard
+![](https://github.com/huzzbuzz/little-a-dashboard/blob/master/screenshot/dashboard.gif)
+
+#### Login
+![](https://github.com/huzzbuzz/little-a-dashboard/blob/master/screenshot/login.gif)
+
+
+#### Lock
+![](https://github.com/huzzbuzz/little-a-dashboard/blob/master/screenshot/lock.gif)
+
+
+#### alert
+![](https://github.com/huzzbuzz/little-a-dashboard/blob/master/screenshot/alert.gif)
+
+
+#### Charts
+![](https://github.com/huzzbuzz/little-a-dashboard/blob/master/screenshot/charts.gif)
+
+
+#### Table
+![](https://github.com/huzzbuzz/little-a-dashboard/blob/master/screenshot/table.gif)
+
+
+#### Sidebar
+![](https://github.com/huzzbuzz/little-a-dashboard/blob/master/screenshot/sidebar.gif)
+
+
+#### Setting
+![](https://github.com/huzzbuzz/little-a-dashboard/blob/master/screenshot/setting.gif)
 
 
 ## Acknowledge 
