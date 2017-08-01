@@ -22,7 +22,7 @@ const Lock = ({
               <span>Richardson</span>
             </div>
             <Row style={{ textAlign: 'center' }}>
-              <Input size="large" placeholder="Enter Password" />
+              <Input size="large" placeholder="Enter Password" type="password" />
               <Button type="dashed" ghost size="large" onClick={handleUnLock}>UNLOCK</Button>
             </Row>
           </div>
