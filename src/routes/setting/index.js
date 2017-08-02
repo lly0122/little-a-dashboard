@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'dva';
 import classnames from 'classnames';
-import { Row, Col, Tag } from 'antd';
+import { Row, Col, Tag, Switch } from 'antd';
 import styles from './setting.less';
 
 const img1 = require('../../assets/img/sidebar-1.jpg');
@@ -28,10 +28,15 @@ class Setting extends React.Component {
     })
   }
 
+  handleSettingImgIsClose = () => {
+    const { dispatch } = this.props;
+    dispatch({ type: 'app/switchIsCloseSidebarBgImg' })
+  }
+
   render() {
 
     const { app } = this.props;
-    const { sidebarBgImg, sidebarBgColor } = app;
+    const { sidebarBgImg, sidebarBgColor, isCloseSidebarBgImg } = app;
 
     return (
       <div className={styles.container}>
@@ -45,7 +50,8 @@ class Setting extends React.Component {
           </Col>
           <Col span={32}>
             <h2>SIDEBAR BACKGROUND IMAGE</h2>
-            <Row gutter={24}>
+            <Switch checkedChildren="ON" unCheckedChildren="OFF" size="default" checked={isCloseSidebarBgImg} onChange={this.handleSettingImgIsClose} />
+            <Row gutter={48}>
               <Col span={6}>
                 <img alt="sidebar-bg" className={classnames(styles.sidebarImg, { [styles.active]: sidebarBgImg === '1' || false })} src={img1} onClick={() => this.handleSettingImg('1')} />
               </Col>
