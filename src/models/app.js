@@ -8,7 +8,7 @@ export default {
     fullScreen: localStorage.getItem('fullScreen') === 'true',
     sidebarBgColor: localStorage.getItem('sidebarBgColor') ? localStorage.getItem('sidebarBgColor') : 'red',
     sidebarBgImg: localStorage.getItem('sidebarBgImg') ? localStorage.getItem('sidebarBgImg') : '1',
-    isCloseSidebarBgImg: true,
+    isShowSidebarBgImg: true,
   },
   subscriptions: {
 
@@ -52,10 +52,10 @@ export default {
       return { ...state, sidebarBgImg: action.payload };
     },
 
-    switchIsCloseSidebarBgImg(state) {
+    switchIsShowSidebarBgImg(state) {
       return {
         ...state,
-        isCloseSidebarBgImg: !state.isCloseSidebarBgImg,
+        isShowSidebarBgImg: !state.isShowSidebarBgImg,
       }
     },
   },

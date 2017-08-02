@@ -30,13 +30,13 @@ class Setting extends React.Component {
 
   handleSettingImgIsClose = () => {
     const { dispatch } = this.props;
-    dispatch({ type: 'app/switchIsCloseSidebarBgImg' })
+    dispatch({ type: 'app/switchIsShowSidebarBgImg' })
   }
 
   render() {
 
     const { app } = this.props;
-    const { sidebarBgImg, sidebarBgColor, isCloseSidebarBgImg } = app;
+    const { sidebarBgImg, sidebarBgColor, isShowSidebarBgImg } = app;
 
     return (
       <div className={styles.container}>
@@ -50,7 +50,7 @@ class Setting extends React.Component {
           </Col>
           <Col span={32}>
             <h2>SIDEBAR BACKGROUND IMAGE</h2>
-            <Switch checkedChildren="ON" unCheckedChildren="OFF" size="default" checked={isCloseSidebarBgImg} onChange={this.handleSettingImgIsClose} />
+            <Switch checkedChildren="ON" unCheckedChildren="OFF" size="default" checked={isShowSidebarBgImg} onChange={this.handleSettingImgIsClose} />
             <Row gutter={48}>
               <Col span={6}>
                 <img alt="sidebar-bg" className={classnames(styles.sidebarImg, { [styles.active]: sidebarBgImg === '1' || false })} src={img1} onClick={() => this.handleSettingImg('1')} />

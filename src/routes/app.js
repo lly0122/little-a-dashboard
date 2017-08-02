@@ -14,7 +14,7 @@ class App extends React.Component {
   render() {
 
     const { children, dispatch, app, loading } = this.props;
-    const { sidebarFold, fullScreen, sidebarBgImg, sidebarBgColor, isCloseSidebarBgImg } = app;
+    const { sidebarFold, fullScreen, sidebarBgImg, sidebarBgColor, isShowSidebarBgImg } = app;
 
     const headerProps = {
       fullScreen,
@@ -69,7 +69,7 @@ class App extends React.Component {
       <div className={classnames(LayoutStyles.layout, { [LayoutStyles.fold]: sidebarFold || false })}>
         <aside className={classnames(LayoutStyles.siderbar, LayoutStyles[`siderbar-bg-${sidebarBgColor}`])}>
           {
-            isCloseSidebarBgImg ?
+            isShowSidebarBgImg ?
             <div className={LayoutStyles['siderbar-bg-img']} style={{ backgroundImage: `url(${require(`../assets/img/sidebar-${sidebarBgImg}.jpg`)})` }}></div>
             :
             ''
